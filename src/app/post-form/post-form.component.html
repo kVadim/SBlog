@@ -1,0 +1,34 @@
+<form *ngIf="post" class="well" (ngSubmit)="onSubmit(post);" #postForm="ngForm">
+  <div class="body">
+    <div class="form-group">
+      <form class ="datepicker" #myForm="ngForm" novalidate>
+        <my-date-picker #mydate="ngModel" name="mydate" [options]="myDatePickerOptions" [(ngModel)]="newDate"  [placeholder]="post.date | date: 'dd.MM.yyyy'"
+                        (dateChanged)="onDateChanged($event)" required>
+        </my-date-picker>
+        <div [hidden]="mydate.valid || mydate.pristine" class="alert alert-danger">  Invalid Date ! </div>
+      </form>
+      <label for="title">Title:</label> 
+      <input #name="ngModel" type="text" name="name" id="title" class="form-control" placeholder="add title ..."
+             required  maxlength="100" [(ngModel)]="post.name">
+      <div *ngIf="name.dirty || name.touched">
+          <div [hidden]="post.name.trim() !== ''"  class="alert alert-danger"> Title is required !</div>
+          <div [hidden]="post.name.length !== 100" class="alert alert-danger"> Title cannot be more than 100 characters long !</div>
+      </div>
+    </div>
+      <div class="form-group">
+        <label for="content">Content:</label>
+        <textarea name="content" id="content" class="form-control" rows="10"  placeholder="type here ..."
+                  required minlength="200" maxlength="5000" [(ngModel)]="post.text" #content="ngModel"></textarea>
+        <div *ngIf="content.dirty || content.touched">
+            <div [hidden]="post.text.length >   200"  class="alert alert-danger"> Content of post can not be less than 200 characters !</div>
+            <div [hidden]="post.text.length !== 5000" class="alert alert-danger"> Content of post can not be more than 5000 characters !</div>
+        </div>         
+      </div>
+  </div>
+  <div class="footer">
+    <button type="submit" class="btn btn-default publish" 
+    [disabled]="(postForm.form.pristine && myForm.form.pristine) || !postForm.form.valid || mydate.invalid || post.name.trim() === '' || post.text.trim() === ''"> 
+    {{submitButton}} </button>
+    <button type="button" class="btn btn-default cancel" (click)="Close()"> Close </button>
+  </div>
+</form>

@@ -1,3 +1,9 @@
-<p>
-  sidemenu works!
-</p>
+ <h3>
+   {{title}}
+ </h3>
+  <section class="list-group" *ngIf="count">   
+    <a href="#" class="list-group-item" *ngFor='let post of (latestPosts | sortByDate  | slice:0: 5)' [routerLink]="['/post', post.id]"> 
+      <p class="latest-posts">{{post.name}} </p>
+    </a> 
+  </section>
+  <div class = "counter">Count of Posts: {{count}}</div>

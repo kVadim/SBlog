@@ -1,0 +1,45 @@
+h4 {
+    color: #333;
+    font-weight: bold;
+}
+
+.delete{
+  background-color: #222; 
+}
+
+.read{
+  background-color: #558C89;
+}
+
+.well-lg{
+    padding-top: 10px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    border-radius: 8px;  
+}
+
+
+div p{
+    display: block;
+    margin: 20px, 10px, 5px, 5px;
+    display: -webkit-box;
+    height: 70 px;
+    margin: 0 auto;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+span.post-date{
+    font-weight: bold;
+    float:right;
+    padding: 10px;
+}
+
+.col-sm-10{    
+     border-left: 5px solid #558C89;
+     }
+
+

@@ -1,0 +1,31 @@
+.well{
+    border-radius: 8px;
+}
+
+.cancel{
+  background-color: #222; 
+}
+
+.publish{
+  background-color: #558C89; 
+}
+
+label{
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    text-indent: 10px;
+    padding-bottom: 10px;
+}
+
+
+.datepicker{
+  display: inline;
+  position: absolute;
+  right: 40px;
+}
+
+textarea{
+  max-width: 100%;
+}

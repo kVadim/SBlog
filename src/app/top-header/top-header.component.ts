@@ -5,11 +5,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './top-header.component.html',
   styleUrls: ['./top-header.component.scss']
 })
-export class TopHeaderComponent implements OnInit {
+export class TopHeaderComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+ blogTitle: string = 'SimpleBlog';
 
 }

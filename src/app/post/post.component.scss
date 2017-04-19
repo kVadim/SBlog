@@ -1,0 +1,70 @@
+.well-lg{
+    /*margin-top: 20px;*/
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    border-radius: 8px;   
+}
+
+h4 {
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+p{
+    text-indent: 25px;
+    text-align: justify;
+    
+}
+
+.edit-post{
+  background-color: #558C89; 
+}
+
+.save{
+  background-color: #222;
+}
+
+
+span.post-date{
+    font-weight: bold;
+    float:right;
+    padding: 10px;
+}
+
+/*//////////////////////////////////////*/
+.well{
+    /*margin-top: 20px;*/
+    border-radius: 8px;
+}
+
+.cancel{
+  background-color: #222; 
+}
+
+.publish{
+  background-color: #558C89; 
+}
+
+label{
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    text-indent: 10px;
+    padding-bottom: 10px;
+}
+
+
+.datepicker{
+  display: inline;
+  position: absolute;
+  right: 40px;
+}
+
+textarea{
+  max-width: 100%;
+}
