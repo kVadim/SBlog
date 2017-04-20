@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 import { RoutingModule } from './routing.module';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './services/in-memory-data.service';
-// import { DatePickerModule } from 'ng2-datepicker';
 import { MyDatePickerModule } from 'mydatepicker';
 
 import { AppComponent } from './app.component';
@@ -40,7 +39,6 @@ import { TopHeaderComponent } from './top-header/top-header.component';
     RoutingModule,
     HttpModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
-    // DatePickerModule,
     MyDatePickerModule
   ],
   providers: [BlogdataService],

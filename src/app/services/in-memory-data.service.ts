@@ -6,13 +6,21 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 1,
         name: `PostName1`,
-        text: 'In January 2009 the three founders of a little-known website called Airbedandbreakfast.com decided at the last minute to attend the inauguration of Barack Obama. Brian Chesky, Joe Gebbia, and Nathan Blecharczyk were all in their mid-20s and had no tickets to the festivities, or winter clothes, or even a firm grasp of the week’s schedule. But they saw an opportunity. Their online home-sharing company had limped along for more than a year with little to show for it. Now the eyes of the world would be on the nation’s capital, and they wanted to take advantage.',
+        text: `In January 2009 the three founders of a little-known website called Airbedandbreakfast.com
+               decided at the last minute to attend the inauguration of Barack Obama. Brian Chesky, Joe Gebbia, 
+               and Nathan Blecharczyk were all in their mid-20s and had no tickets to the festivities, or winter 
+               clothes, or even a firm grasp of the week’s schedule. But they saw an opportunity. Their online 
+               home-sharing company had limped along for more than a year with little to show for it. Now the 
+               eyes of the world would be on the nation’s capital, and they wanted to take advantage.`,
         date: new Date("03.01.2017")
       },
       {
         id: 2,
         name: `PostName2`,
-        text: 'Earlier on Tuesday, Jeff Holden, the chief product officer at Uber, said the ride-hailing industry would change “when the money train stops.” In an interview at the Bloomberg Technology Conference in San Francisco, Holden highlighted a “very distorted capital market.” He said: “When the tide goes out, we’ll see who makes it.”',
+        text: `Earlier on Tuesday, Jeff Holden, the chief product officer at Uber, said the ride-hailing industry
+               would change “when the money train stops.” In an interview at the Bloomberg Technology Conference 
+               in San Francisco, Holden highlighted a “very distorted capital market.” He said: “When the tide goes
+                out, we’ll see who makes it.”`,
         date: new Date("03.02.2017")
       },
       {
