@@ -1,9 +1,9 @@
 import 'rxjs/add/operator/switchMap';
 import { Component, OnInit }      from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { BlogdataService } from "../services/blogdata.service";
+import { BlogdataService } from "../../services/blogdata.service";
 
-import { Post } from '../shared/post';
+import { Post } from '../../shared/post';
 
 @Component({
   selector: 'app-edit-post',

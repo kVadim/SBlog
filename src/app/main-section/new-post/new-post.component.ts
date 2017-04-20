@@ -1,15 +1,15 @@
 import { Component, OnInit} from '@angular/core';
-import { BlogdataService } from '../services/blogdata.service';
+import { BlogdataService } from '../../services/blogdata.service';
 import { IMyOptions, IMyDate, IMyDateModel } from 'mydatepicker';
-import { Post } from '../shared/post';
+import { Post } from '../../shared/post';
 
 @Component ({
   moduleId: module.id,
-  selector: 'app-new-post-form',
-  templateUrl: 'new-post-form.component.html',
-  styleUrls: ['new-post-form.component.scss']
+  selector: 'app-new-post',
+  templateUrl: 'new-post.component.html',
+  styleUrls: ['new-post.component.scss']
 })
-export class NewPostFormComponent implements OnInit{
+export class NewPostComponent implements OnInit{
   editMode:boolean=false;
   post: Post;
   submitButton:string = 'Publish';

@@ -1,21 +1,12 @@
-// $primary-white: #ECECEA;
-
-// .fixed-top {
-//     width: 100%;
-//     color: $primary-white;
-//     text-align: center;
-//     font-weight: bold;
-//     z-index: 999;
-// }
+@import '../styles.scss';
 
 .col-sm-10{    
-     border-left: 5px solid #558C89;
+     border-left: 5px solid $btn_bg_light_color;
      }
 
-app-postview {
+app-main-section {
     margin: 0 0 0 20px;
 }
-
 
 app-top-header{
         position: fixed;
@@ -23,7 +14,7 @@ app-top-header{
         z-index: 100;
         top: 0;
         height: 70px;
-        background: #74AFAD;
+        background: $main_bg_color; 
 }
 
 .container {
@@ -34,7 +25,17 @@ app-top-header{
     app-sidemenu {
         position: fixed;
         top: 70px;
-        width: 10.5%;
-        
+        width: 10.5%;       
     }
 }
+
+
+// $primary-white: #ECECEA;
+
+// .fixed-top {
+//     width: 100%;
+//     color: $primary-white;
+//     text-align: center;
+//     font-weight: bold;
+//     z-index: 999;
+// }

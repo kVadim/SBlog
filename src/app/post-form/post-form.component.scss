@@ -1,36 +1,35 @@
+@import '../../styles.scss';
 .well{
     border-radius: 8px;
 }
 
 .cancel{
-  background-color: #222; 
+  background-color: $btn_bg_dark_color; 
 }
 
 .publish{
-  background-color: #558C89; 
+  background-color: $btn_bg_light_color; 
 }
 
 label{
     font-size: 18px;
-    color: #333;
+    color: $label_text_color;
     font-weight: bold;
     text-align: center;
     text-indent: 10px;
     padding-bottom: 10px;
 }
 
-
 .datepicker{
-  /*display: inline;*/
   float:right;
-  /*position: absolute;*/
   right: 40px;
 }
 
 textarea{
   max-width: 100%;
+  text-align: justify;
 }
 
 .btn:hover:disabled {
-  background-color: #558C89;
+  background-color: $btn_bg_light_color;
 }

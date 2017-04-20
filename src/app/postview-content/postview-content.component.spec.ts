@@ -6,9 +6,9 @@ import { Router }            from '@angular/router';
 import { PostviewContentComponent } from './postview-content.component';
 import { Post } from '../shared/post';
 import { BlogdataService } from "../services/blogdata.service";
-import { BlogdataServiceSpy } from "../testing/blogdata-spy.service";
+import { BlogdataServiceSpy } from "../_testing-stubs/blogdata-spy.service";
 import { SortByDatePipe } from '../shared/sort-by-date.pipe';
-import { RouterLinkStubDirective }   from '../testing/router-stubs';
+import { RouterLinkStubDirective }   from '../_testing-stubs/router-stubs';
 
 class RouterStub {
   navigateByUrl(url: string) { return url; }

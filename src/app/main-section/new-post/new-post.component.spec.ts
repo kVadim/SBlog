@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { PostFormComponent} from '../post-form/post-form.component';
-import { NewPostFormComponent } from './new-post-form.component';
-import { BlogdataService } from "../services/blogdata.service";
+import { PostFormComponent} from '../../post-form/post-form.component';
+import { NewPostComponent } from './new-post.component';
+import { BlogdataService } from "../../services/blogdata.service";
 import { Http } from '@angular/http';
 import { InMemoryDbService } from 'angular-in-memory-web-api';
 
 import { NO_ERRORS_SCHEMA }          from '@angular/core';
 
-describe('NewPostFormComponent', () => {
-  let component: NewPostFormComponent;
-  let fixture: ComponentFixture<NewPostFormComponent>;
+describe('NewPostComponent', () => {
+  let component: NewPostComponent;
+  let fixture: ComponentFixture<NewPostComponent>;
   let blogService: BlogdataService;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NewPostFormComponent ],
+      declarations: [ NewPostComponent ],
        providers: [ BlogdataService, Http, InMemoryDbService],
        schemas:  [ NO_ERRORS_SCHEMA ]
     })
@@ -23,11 +23,11 @@ describe('NewPostFormComponent', () => {
 
   beforeEach(() => {
      TestBed.configureTestingModule({
-      declarations: [ NewPostFormComponent ],
+      declarations: [ NewPostComponent ],
        providers: [ BlogdataService],
        schemas:  [ NO_ERRORS_SCHEMA ]
     })
-    fixture = TestBed.createComponent(NewPostFormComponent);
+    fixture = TestBed.createComponent(NewPostComponent);
     component = fixture.componentInstance;
     blogService = fixture.debugElement.injector.get(BlogdataService);
     fixture.detectChanges();

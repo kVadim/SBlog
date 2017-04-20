@@ -2,12 +2,12 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By }           from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { BlogdataService } from "../services/blogdata.service";
-import { BlogdataServiceSpy } from "../testing/blogdata-spy.service";
-import { ActivatedRoute, ActivatedRouteStub } from '../testing/router-stubs';
-import { PostComponent } from './post.component';
+import { BlogdataService } from "../../services/blogdata.service";
+import { BlogdataServiceSpy } from "../../_testing-stubs/blogdata-spy.service";
+import { ActivatedRoute, ActivatedRouteStub } from '../../_testing-stubs/router-stubs';
+import { PostComponent } from './post-view.component';
 import { Router }            from '@angular/router';
-import { Post } from '../shared/post';
+import { Post } from '../../shared/post';
 
 class RouterStub {
   navigateByUrl(url: string) { return url; }

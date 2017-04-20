@@ -1,17 +1,17 @@
 import 'rxjs/add/operator/switchMap';
 import { Component, OnInit }      from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
-import { BlogdataService } from "../services/blogdata.service";
+import { BlogdataService } from "../../services/blogdata.service";
 import { Router }            from '@angular/router';
 
-import { Post } from '../shared/post';
+import { Post } from '../../shared/post';
 
 
 @Component({
   moduleId: module.id,
   selector: 'app-post',
-  templateUrl: './post.component.html',
-  styleUrls: ['./post.component.scss']
+  templateUrl: './post-view.component.html',
+  styleUrls: ['./post-view.component.scss']
 })
 export class PostComponent implements OnInit {
  post: Post;

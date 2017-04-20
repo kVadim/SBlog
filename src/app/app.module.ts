@@ -9,13 +9,13 @@ import { MyDatePickerModule } from 'mydatepicker';
 
 import { AppComponent } from './app.component';
 import { SidemenuComponent } from './sidemenu/sidemenu.component';
-import { NewPostFormComponent } from './new-post-form/new-post-form.component';
-import { PostComponent } from './post/post.component';
+import { NewPostComponent } from './main-section/new-post/new-post.component';
+import { PostComponent } from './main-section/post-view/post-view.component';
 import { BlogdataService } from './services/blogdata.service';
-import { PostviewComponent } from './postview/postview.component';
+import { MainSectionComponent } from './main-section/main-section.component';
 import { PostviewContentComponent } from './postview-content/postview-content.component';
 import { PostFormComponent } from './post-form/post-form.component';
-import { EditPostComponent } from './edit-post/edit-post.component';
+import { EditPostComponent } from './main-section/edit-post/edit-post.component';
 import { SortByDatePipe } from './shared/sort-by-date.pipe';
 import { TopHeaderComponent } from './top-header/top-header.component';
 
@@ -24,9 +24,9 @@ import { TopHeaderComponent } from './top-header/top-header.component';
   declarations: [
     AppComponent, 
     SidemenuComponent,
-    PostviewComponent, 
+    MainSectionComponent, 
     PostviewContentComponent,
-    NewPostFormComponent, 
+    NewPostComponent, 
     PostComponent, 
     PostFormComponent, 
     EditPostComponent, 

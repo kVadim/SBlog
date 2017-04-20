@@ -1,18 +1,20 @@
+@import '../../styles.scss';
+
 section.list-group{
     margin-bottom: 8px;
 }
 
 a{
-    border-left: 10px solid #558C89;
-    background-color: #f5f5f5
+    border-left: 10px solid $btn_bg_light_color;
+    background-color: $post_bg_color
 }   
 
 a:hover{
-    background-color: #e8e8e8;
+    background-color: $post_hov_color;
 } 
 
 p.latest-posts {
-    color: #333;
+    color: $label_text_color;
     font-size: 12px;
     font-weight: bold;
     overflow: hidden;
@@ -23,7 +25,7 @@ p.latest-posts {
 
 div.counter {
     font-size: 14px;
-    color: #333;
+    color: $label_text_color;
     font-weight: bold;
     text-align: center;
     margin-bottom: 12px;
@@ -32,5 +34,5 @@ div.counter {
 h3 {
      text-align: center;
      font-size: 20px;
-     color: #ECECEA;
+     color: $btn_text_color;
 }

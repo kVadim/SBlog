@@ -1,6 +1,6 @@
 <div class="well well-lg" *ngIf="post" >
   <h4>{{ post.name | uppercase }}</h4>
-  <p>{{ post.text }}</p>
+  <pre>{{ post.text }}</pre>
   <span class="post-date">{{ post.date | date: 'dd.MM.yyyy' }}</span>  
   <button type="button" class="btn btn-default edit-post" (click)="onEdit(post)">Edit Post</button>
   <button type="button" class="btn btn-default save" (click)="onClose()">Close</button>

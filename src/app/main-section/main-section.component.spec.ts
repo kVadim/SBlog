@@ -1,15 +1,14 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { PostviewComponent } from './postview.component';
+import { MainSectionComponent } from './main-section.component';
 import { By } from '@angular/platform-browser';
-import { RouterLinkStubDirective }   from '../testing/router-stubs';
-// import { RouterLinkActiveStubDirective }   from '../testing/router-stubs';
-import { RouterOutletStubComponent } from '../testing/router-stubs';
+import { RouterLinkStubDirective }   from '../_testing-stubs/router-stubs';
+import { RouterOutletStubComponent } from '../_testing-stubs/router-stubs';
 import { DebugElement }    from '@angular/core';
 import { NO_ERRORS_SCHEMA }          from '@angular/core';
 
 describe('PostviewComponent', () => {
-  let component: PostviewComponent;
-  let fixture: ComponentFixture<PostviewComponent>;
+  let component: MainSectionComponent;
+  let fixture: ComponentFixture<MainSectionComponent>;
   let links: RouterLinkStubDirective[];
   let linkDes: DebugElement[];
   let btns: DebugElement[];
@@ -20,9 +19,8 @@ describe('PostviewComponent', () => {
 beforeEach( async(() => {
   TestBed.configureTestingModule({
     declarations: [
-      PostviewComponent, 
+      MainSectionComponent, 
       RouterLinkStubDirective, 
-      // RouterLinkActiveStubDirective,   // created by me
       RouterOutletStubComponent
     ],
     schemas:  [ NO_ERRORS_SCHEMA ]
@@ -30,7 +28,7 @@ beforeEach( async(() => {
 
   .compileComponents()
   .then(() => {
-    fixture = TestBed.createComponent(PostviewComponent);
+    fixture = TestBed.createComponent(MainSectionComponent);
     component = fixture.componentInstance;
   });
 }));

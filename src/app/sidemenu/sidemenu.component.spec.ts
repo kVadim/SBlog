@@ -5,9 +5,9 @@ import { By }              from '@angular/platform-browser';
 import { SidemenuComponent } from './sidemenu.component';
 import { Post } from '../shared/post';
 import { BlogdataService } from "../services/blogdata.service";
-import { BlogdataServiceSpy } from "../testing/blogdata-spy.service";
+import { BlogdataServiceSpy } from "../_testing-stubs/blogdata-spy.service";
 import { SortByDatePipe } from '../shared/sort-by-date.pipe';
-import { RouterLinkStubDirective }   from '../testing/router-stubs';
+import { RouterLinkStubDirective }   from '../_testing-stubs/router-stubs';
 
 describe('SidemenuComponent', () => {
   let component: SidemenuComponent;

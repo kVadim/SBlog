@@ -1,0 +1,41 @@
+@import '../../../styles.scss';
+.well-lg{
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+}
+
+h4 {
+    color: $label_text_color;
+    font-weight: bold;
+    text-align: center;
+}
+
+pre{
+    // text-indent: 35px;
+    text-align: justify;
+    white-space: pre-wrap;
+    font-family: $main_font;
+    font-size: $main_font_size + 1px;
+    border: 0px;
+    word-break: normal;
+    word-wrap: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.edit-post{
+  background-color: $btn_bg_light_color; 
+}
+
+.save{
+  background-color: $btn_bg_dark_color;
+}
+
+.post-date{
+    font-weight: bold;
+    float:right;
+    padding: 10px;
+}
