@@ -8,6 +8,9 @@ a{
 
 
 @media (min-width: 300px){
+    .navbar {
+        border-radius: 4px;
+    }
     .navbar-nav{
         float: left;
         margin: 0;

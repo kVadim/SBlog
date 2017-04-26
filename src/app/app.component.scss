@@ -29,5 +29,11 @@ app-top-header{
     }
 }
 
+@media (max-width: 767px) {
+    .col-sm-10{    
+        border-left: 0;
+        }
+}
+
 
 
