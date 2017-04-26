@@ -42,6 +42,7 @@ export class PostFormComponent implements OnInit {
 
    private myDatePickerOptions: IMyOptions = {
         dateFormat: 'dd.mm.yyyy',
+        alignSelectorRight: true,
         height:'28px',
         width: '170px',
         selectionTxtFontSize: '18px',

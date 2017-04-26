@@ -24,8 +24,9 @@ the name. For example, you can use the ngClass directive to add and remove CSS c
       {
         id:3, 
         name: `PostName3`,
-        text: '\t Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects \
-on the webBootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web',
+        text: '\t Interpolation is a form of property data binding in which a template expression between double-curly braces \
+renders as text. That text may be concatenated with neighboring text before it is assigned to an element property or displayed \
+between element tags, as in this example.',
         date: new Date("03.03.2017")
       },
       {
@@ -49,9 +50,8 @@ the name property of that component. \n\t The elided object argument to the @Com
       {
         id:6, 
         name: `PostName6`,
-        text: '\t Interpolation is a form of property data binding in which a template expression between double-curly braces \
-renders as text. That text may be concatenated with neighboring text before it is assigned to an element property or displayed \
-between element tags, as in this example.',
+        text: '\t Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects \
+on the webBootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web',
         date: new Date("03.06.2017")
       },
       {

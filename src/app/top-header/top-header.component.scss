@@ -1,8 +1,7 @@
-$primary-white: #ECECEA;
-
+@import '../../styles.scss';
 h1 {
     width: 100%;
-    color: $primary-white;
+    color: $btn_text_color;
     text-align: center;
     font-weight: bold;
     z-index: 999;
