@@ -1,11 +1,4 @@
 @import '../../../styles.scss';
-.well-lg{
-    border-radius: 8px;
-    padding-top: 10px;
-    padding-right: 24px;
-    padding-bottom: 24px;
-    padding-left: 24px;
-}
 
 h4 {
     color: $label_text_color;
@@ -34,8 +27,4 @@ pre{
   background-color: $btn_bg_dark_color;
 }
 
-.post-date{
-    font-weight: bold;
-    float:right;
-    padding: 10px;
-}
+

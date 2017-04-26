@@ -32,3 +32,17 @@ body {
 .btn:hover {
   color: $btn_hov_text_color;
 }
+
+.well-lg{
+    padding-top: 10px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    border-radius: 8px;  
+}
+
+.post-date{
+    font-weight: bold;
+    float:right;
+    padding: 10px;
+}
