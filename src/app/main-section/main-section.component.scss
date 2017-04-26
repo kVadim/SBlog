@@ -1,8 +1,5 @@
 .navbar{
     margin: 0 0 0 0;
-    /*display: inline-block;*/
-    /*position: fixed;      
-    width: 100%;  */
 }
 
 a{
@@ -10,12 +7,18 @@ a{
 }
 
 
-/*@media (min-width: 768px) {
-    .navbar {
-        position: fixed;
-        top: 70px;
-        width: 67.3%;
-        
+@media (min-width: 300px){
+    .navbar-nav{
+        float: left;
+        margin: 0;
     }
-}*/
+     .navbar-nav>li{
+        float: left; 
+    }
+     .navbar-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
 
