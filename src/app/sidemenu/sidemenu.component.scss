@@ -19,11 +19,10 @@ p.latest-posts {
     font-weight: bold;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 0 0 0 0;
-    
+    margin: 0 0 0 0;  
 }
 
-div.counter {
+.counter {
     font-size: $main_font_size;
     color: $label_text_color;
     font-weight: bold;
@@ -35,4 +34,10 @@ h3 {
      text-align: center;
      font-size: 20px;
      color: $btn_text_color;
+}
+
+@media (max-width: 767px ){
+     h3 {
+        display: none;
+     }
 }

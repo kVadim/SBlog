@@ -22,6 +22,21 @@ a{
         padding-top: 15px;
         padding-bottom: 15px;
     }
+
+    .navbar-nav .toolbar{
+        float: left;
+        margin: 0;
+    }
+    .navbar-nav .mobile{
+        float: right;
+        margin: 0;
+    }
+}
+    
+@media (min-width: 768px){
+    .mobile{
+        display: none;
+    }
 }
 
 

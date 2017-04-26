@@ -17,15 +17,21 @@ app-top-header{
         background: $main_bg_color; 
 }
 
+app-sidemenu {
+        position: fixed;
+        top: 70px;
+        width: 10.5%;       
+    }
+ 
+
 .container {
     margin-top: 60px;
 }
 
-@media (min-width: 768px) {
+
+@media (max-width: 767px) {
     app-sidemenu {
-        position: fixed;
-        top: 70px;
-        width: 10.5%;       
+       display: none;      
     }
 }
 
