@@ -30,15 +30,19 @@ app-sidemenu {
 
 
 @media (max-width: 767px) {
-    app-sidemenu {
-       display: none;      
-    }
-}
-
-@media (max-width: 767px) {
     .col-sm-10{    
         border-left: 0;
         }
+    app-sidemenu {
+       display: none;      
+    }
+    .container {
+    margin-top: 45px;
+   }
+
+   app-top-header{
+        height: 60px;
+    }
 }
 
 
