@@ -6,7 +6,6 @@ a{
     font-size: 15px;
 }
 
-
 @media (min-width: 300px){
     .navbar {
         border-radius: 4px;
@@ -22,17 +21,12 @@ a{
         padding-top: 15px;
         padding-bottom: 15px;
     }
-
-    .navbar-nav .toolbar{
-        float: left;
-        margin: 0;
-    }
-    .navbar-nav .mobile{
-        float: right;
-        margin: 0;
-    }
+    .navbar-right {
+    float: right!important;
 }
-    
+}
+   
+
 @media (min-width: 768px){
     .mobile{
         display: none;
